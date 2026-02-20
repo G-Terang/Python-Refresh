@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Data Engineer & Fullstack Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="stars"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="gradient-text">Ganesh Terang</span></h1>
+                <p class="hero-subtitle">Data Engineer & Fullstack Web Developer</p>
+                <p class="hero-description">Building scalable data pipelines and full-stack applications that drive business intelligence and user engagement</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:your.email@example.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-animation">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Data Engineer and Fullstack Web Developer with expertise in designing and implementing scalable data solutions combined with building robust, user-centric web applications. I specialize in ETL pipelines, data warehousing, cloud infrastructure, and modern web frameworks to deliver end-to-end solutions.</p>
+                    <p>My focus is on leveraging data-driven insights to build intelligent applications. I'm proficient in the complete development lifecycle from backend infrastructure and database optimization to responsive frontend interfaces. I love solving complex architectural challenges and contributing to open-source projects.</p>
+                    <div class="skills">
+                        <h3>Skills & Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Apache Spark</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS/GCP</span>
+                            <span class="skill-tag">Kafka</span>
+                            <span class="skill-tag">ETL/ELT</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Redis</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">API Design</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="data">Data Engineering</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="data">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%234F46E5' width='400' height='300'/%3E%3C/svg%3E" alt="Real-time Data Pipeline">
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="project-link"><i class="fas fa-globe"></i> Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Real-time Data Pipeline</h3>
+                        <p>Designed and implemented a high-throughput, low-latency data pipeline processing millions of events daily. Integrated Apache Kafka for streaming, Apache Spark for transformation, and optimized data warehouse loading with partitioning strategies.</p>
+                        <div class="project-tags">
+                            <span>Apache Kafka</span>
+                            <span>Spark</span>
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%2310B981' width='400' height='300'/%3E%3C/svg%3E" alt="Analytics Dashboard">
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="project-link"><i class="fas fa-globe"></i> Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Real-time Analytics Dashboard</h3>
+                        <p>Full-stack application built with React frontend and Node.js/Express backend, connected to a PostgreSQL database with optimized queries. Features interactive visualizations, real-time data updates via WebSockets, and role-based access control.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>PostgreSQL</span>
+                            <span>WebSockets</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="data">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%23F59E0B' width='400' height='300'/%3E%3C/svg%3E" alt="Data Warehouse Migration">
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="project-link"><i class="fas fa-globe"></i> Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Data Warehouse Migration</h3>
+                        <p>Led the migration of legacy on-premise data warehouse to AWS Redshift. Implemented ELT patterns, optimized schema design for analytics workloads, and reduced query latency by 70%. Created comprehensive data lineage and quality monitoring.</p>
+                        <div class="project-tags">
+                            <span>AWS Redshift</span>
+                            <span>ETL/ELT</span>
+                            <span>Python</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%23EC4899' width='400' height='300'/%3E%3C/svg%3E" alt="API Gateway Service">
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="project-link"><i class="fas fa-globe"></i> Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Microservices API Gateway</h3>
+                        <p>Architected and deployed a scalable API gateway supporting millions of requests. Implemented rate limiting, authentication/authorization, request routing, and comprehensive logging. Containerized with Docker and orchestrated using Kubernetes.</p>
+                        <div class="project-tags">
+                            <span>Node.js</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-category="fullstack">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%238B5CF6' width='400' height='300'/%3E%3C/svg%3E" alt="Machine Learning Pipeline">
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="project-link"><i class="fas fa-globe"></i> Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>ML Model Serving Pipeline</h3>
+                        <p>Built end-to-end ML pipeline with data preprocessing, model training, and REST API serving. Implemented model versioning, A/B testing framework, and automated model retraining. Integrated with React dashboard for predictions and model monitoring.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>FastAPI</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card" data-category="data">
+                    <div class="project-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect fill='%2306B6D4' width='400' height='300'/%3E%3C/svg%3E" alt="Data Quality Framework">
+                        <div class="project-overlay">
+                            <a href="https://github.com" target="_blank" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="#" class="project-link"><i class="fas fa-globe"></i> Live Demo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Data Quality & Monitoring Framework</h3>
+                        <p>Developed comprehensive data quality framework with automated validation rules, anomaly detection, and alerting. Monitors data pipelines in production with PagerDuty integration. Reduced data incidents by 85% and improved team confidence in data reliability.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Great Expectations</span>
+                            <span>Apache Airflow</span>
+                            <span>Prometheus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="research">
+        <div class="container">
+            <h2 class="section-title">Research & Articles</h2>
+            <div class="research-grid">
+                <!-- Research 1 -->
+                <div class="research-card">
+                    <div class="research-header">
+                        <span class="research-badge">Article</span>
+                        <span class="research-date">Feb 2026</span>
+                    </div>
+                    <h3>Designing Scalable ETL Pipelines with Apache Airflow</h3>
+                    <p>A comprehensive guide on designing robust, scalable ETL pipelines using Apache Airflow. Covers DAG design patterns, error handling, monitoring, and best practices for production environments handling petabytes of data.</p>
+                    <div class="research-meta">
+                        <span><i class="fas fa-clock"></i> 12 min read</span>
+                    </div>
+                    <a href="#" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Research 2 -->
+                <div class="research-card">
+                    <div class="research-header">
+                        <span class="research-badge">Research Paper</span>
+                        <span class="research-date">Jan 2026</span>
+                    </div>
+                    <h3>Optimizing PostgreSQL Query Performance for Analytics</h3>
+                    <p>An in-depth technical paper analyzing query optimization techniques, indexing strategies, materialized views, and partitioning for analytical workloads. Includes case studies showing 10x query performance improvements.</p>
+                    <div class="research-meta">
+                        <span><i class="fas fa-file-pdf"></i> PDF Document</span>
+                    </div>
+                    <a href="#" class="read-more">View Research <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Research 3 -->
+                <div class="research-card">
+                    <div class="research-header">
+                        <span class="research-badge">Case Study</span>
+                        <span class="research-date">Dec 2025</span>
+                    </div>
+                    <h3>Building Microservices with Event-Driven Architecture</h3>
+                    <p>Detailed case study implementing event-driven microservices using Kafka, Docker, and Kubernetes. Demonstrates handling eventual consistency, message ordering, and maintaining data synchronization across services at scale.</p>
+                    <div class="research-meta">
+                        <span><i class="fas fa-code"></i> Technical Walkthrough</span>
+                    </div>
+                    <a href="#" class="read-more">Explore Case Study <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Research 4 -->
+                <div class="research-card">
+                    <div class="research-header">
+                        <span class="research-badge">White Paper</span>
+                        <span class="research-date">Nov 2025</span>
+                    </div>
+                    <h3>Data Quality and Governance in Modern Data Stacks</h3>
+                    <p>Comprehensive white paper covering data quality frameworks, metadata management, data lineage tracking, and governance policies. Provides actionable strategies for ensuring data trustworthiness and compliance requirements.</p>
+                    <div class="research-meta">
+                        <span><i class="fas fa-shield-alt"></i> Governance Guide</span>
+                    </div>
+                    <a href="#" class="read-more">Download White Paper <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-subtitle">Have a project in mind? Let's collaborate and create something amazing!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>your.email@example.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Your City, Country</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

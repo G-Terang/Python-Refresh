@@ -1,0 +1,8 @@
+Hi, This is Ganesh Terang.
+I am a Python Developer in a company based in the NYC, USA
+I get paid 300000 USD a year.
+
+
+
+Use of append fn for file i/o in Python: 
+This is another new line added later using the apend function() of the python. 
