@@ -1,6 +1,6 @@
 '''
 2. Constructor and Attributes
-    Create a class Person with a constructor ( __init__ ) that accepts name and age as arguments and stores them as instance attributes. Create an object and print the person’s name and age.
+    Create a class Person with a constructor ( __init__ ) that accepts name and age as arguments and store them as instance attributes. Create an object and print the person’s name and age.
     
 '''
 
