@@ -30,7 +30,7 @@ e1 = Employee("Jack", 45000)
 e2 = Employee("Jill", 55000)
 
 print(e1.company)
-# print(Employee.name) # This is throw error 
+# print(Employee.name) # This will throw error 
 print("\nInstance Method -->")
 e1.print_info()
 e2.print_info()

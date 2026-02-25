@@ -8,16 +8,36 @@
 
 '''
 
+
+
+
+
 def this_is_decorator(func):
     def wrapper():
         print("Function is being called")
         func()
     return wrapper
 
-# @decorator
-
+@this_is_decorator
 def say_hello():
     print("Hello!")
-f = this_is_decorator(say_hello)
 
-f()
+say_hello()
+
+
+
+'''
+def repeat(n):
+    def decorator(func):
+        def wrapper(a):
+            for i in range(n):
+                func(a)
+        return wrapper
+    return decorator
+
+@repeat(7)
+def say_hello(a):
+    print(f"Hello! {a}")
+
+say_hello("Ganesh")
+'''
