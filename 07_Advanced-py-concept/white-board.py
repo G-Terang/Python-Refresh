@@ -204,3 +204,35 @@ b = reduce(lambda a,b: a+b , a)
 print(b)
 
 '''
+
+
+# walrus operator use 
+'''
+
+while(data:=input("Enter any value here : ")):
+    print(data)
+    if data.lower() == 'a':
+        break
+'''
+
+
+#Use of args 
+'''
+
+def sum(*args):
+    print(f"The numbers that i want to sum are: {args}")
+    total = 0
+    for item in args:
+        total+=item
+    return total
+    
+print(f"And the sum of above all the numbers is : {sum(1,2,3,4,5)}")
+'''
+
+
+# Use of kwargs 
+def marks(**kwargs):
+    for item in kwargs.keys():
+        print(f"The marks of {item} is {kwargs[item]}")
+
+marks(Ganesh=100, Ram=95, Jadu = 99, Madhu=97)
