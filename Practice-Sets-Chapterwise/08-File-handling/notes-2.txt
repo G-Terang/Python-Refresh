@@ -1,0 +1,7 @@
+Hello 
+This is a short note on Python
+
+First let's understand what is pYtHoN ?
+Is Python a snake ?
+What kind of python is this !
+Let's dive into more of Python Programming Language.
