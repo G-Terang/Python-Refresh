@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator - TerangMeme</title>
+    <meta name="description" content="Create hilarious memes with TerangMeme, the best meme generator in the market.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .navbar {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+        .navbar .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .navbar .logo {
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .navbar .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        .navbar .nav-links li {
+            margin-left: 30px;
+        }
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .navbar .nav-links a:hover {
+            color: #ffd700;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: rgba(255, 255, 255, 0.9);
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn {
+            background: #ffd700;
+            color: #333;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background 0.3s;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: #ffed4e;
+        }
+        .features {
+            padding: 80px 20px;
+            background: #fff;
+            text-align: center;
+        }
+        .features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #333;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .feature {
+            padding: 30px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+        .feature p {
+            color: #666;
+        }
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            .navbar .nav-links {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">TerangMeme</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">More ▼</a>
+                    <div class="dropdown-content">
+                        <a href="#about">About</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#faq">FAQ</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div>
+            <h1>Welcome to TerangMeme</h1>
+            <p>Create the funniest memes in seconds with our easy-to-use meme generator. Unleash your creativity and share laughs with the world!</p>
+            <a href="#" class="btn">Start Creating Memes</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Why Choose TerangMeme?</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <h3>Easy to Use</h3>
+                <p>Simple drag-and-drop interface. No design skills required!</p>
+            </div>
+            <div class="feature">
+                <h3>Huge Template Library</h3>
+                <p>Thousands of popular meme templates to choose from.</p>
+            </div>
+            <div class="feature">
+                <h3>High Quality</h3>
+                <p>Export your memes in high resolution for perfect sharing.</p>
+            </div>
+            <div class="feature">
+                <h3>Free & Fast</h3>
+                <p>Create unlimited memes for free. No watermarks, no limits.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 TerangMeme. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple dropdown toggle for mobile (if needed)
+        // For now, the CSS hover handles it
+    </script>
+</body>
+</html>
